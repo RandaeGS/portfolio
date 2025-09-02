@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Randae Garcia Portfolio</title>
+	</head>
+	<body>
+		<div class="flex flex-col max-w-1/2 mx-auto ">
+			<div class="navbar">
+				<div class="navbar-start"> <h2 class="font-semibold text-2xl">Randae G.</h2> </div>
+				<div class="navbar-center"></div>
+				<div class="navbar-end">
+					<div class="hidden sm:flex">
+						<button class="btn btn-ghost">Skills</button>
+						<button class="btn btn-ghost">Experience</button>
+						<button class="btn btn-ghost">Projects</button>
+						<button class="btn btn-ghost">Education</button>
+					</div>
+
+					<div class="dropdown dropdown-end sm:hidden">
+						<div tabindex="0" role="button" class="btn m-1"></div>
+						<ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+							<li><a>Skills</a></li>
+							<li><a>Experience</a></li>
+							<li><a>Projects</a></li>
+							<li><a>Education</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			<slot />
+		</div>
+	</body>
+</html>
+
+<script>
+import "../styles/global.css";
+</script>
+
+<style>
+html,
+body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+</style>

@@ -1,0 +1,29 @@
+# Node.js dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build output
+dist/
+.build/
+.out/
+
+# Temporary files
+*.log
+*.log.*
+*.tmp
+*.swp
+*.swo
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Cache files
+.cache/
+astro.config.mjs.cache
+vite.config.js.timestamp-*
+
