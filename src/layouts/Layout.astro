@@ -1,3 +1,7 @@
+---
+import {Github, Linkedin, Menu} from "@lucide/astro"
+import "../styles/global.css";
+---
 <!doctype html>
 <html lang="en">
 	<head>
@@ -8,7 +12,7 @@
 		<title>Randae Garcia Portfolio</title>
 	</head>
 	<body>
-		<div class="flex flex-col max-w-1/2 mx-auto ">
+		<div class="flex flex-col h-screen lg:max-w-1/2 mx-auto justify-between">
 			<div class="navbar">
 				<div class="navbar-start"> <h2 class="font-semibold text-2xl">Randae G.</h2> </div>
 				<div class="navbar-center"></div>
@@ -21,7 +25,7 @@
 					</div>
 
 					<div class="dropdown dropdown-end sm:hidden">
-						<div tabindex="0" role="button" class="btn m-1"></div>
+						<div tabindex="0" role="button" class="btn btn-ghost m-1"><Menu /></div>
 						<ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
 							<li><a>Skills</a></li>
 							<li><a>Experience</a></li>
@@ -33,13 +37,19 @@
 				</div>
 			</div>
 			<slot />
+			<footer class="footer sm:footer-horizontal flex justify-end text-neutral-content items-center p-4">
+				<nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+					<a href="https://github.com/RandaeGS" target="_blank">
+						<Github />
+					</a>
+					<a href="https://www.linkedin.com/in/randae-garc%C3%ADa-s%C3%A1nchez-9a9677283/?locale=en_US" target="_blank">
+						<Linkedin />
+					</a>
+				</nav>
+			</footer>
 		</div>
 	</body>
 </html>
-
-<script>
-import "../styles/global.css";
-</script>
 
 <style>
 html,

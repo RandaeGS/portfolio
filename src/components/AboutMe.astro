@@ -1,0 +1,30 @@
+---
+import Image from "astro/components/Image.astro";
+import personalPhoto from "../assets/personal-photo.jpg"
+import { Github, Linkedin, Mail, MapPin } from "@lucide/astro"
+---
+<div class="flex ">
+	<div class="flex-col grow space-y-2">
+		<Image src={personalPhoto} alt="My photo" class="rounded-2xl" />
+		<aside>
+			<ul class="space-y-1.5">
+				<li class="text-sm text-gray-300 flex items-center space-x-1"><MapPin /><p>Santiago, Dominican Republic</p></li>
+				<li class="text-sm text-gray-300 flex items-center space-x-1"><Mail /><p>garciasanchezrd@gmail.com</p></li>
+				<li class="text-sm text-gray-300"><a class="flex items-center space-x-1" href="https://github.com/RandaeGS"><Github /><p>Github</p></a></li>
+				<li class="text-sm text-gray-300"><a class=" flex items-center space-x-1" href="https://www.linkedin.com/in/randae-garc%C3%ADa-s%C3%A1nchez-9a9677283/?locale=en_US"><Linkedin /><p>Linkedin</p></a></li>
+			</ul>
+		</aside>
+	</div>
+	<div class="grow px-3 space-y-4">
+		<div class="">
+			<h2 class="text-3xl font-semibold">Randae Garcia Sanchez</h2>
+			<h3 class="text-xl font-semibold">Computer Science Engineer</h3>
+		</div>
+		<p>Computer Science Engineer with two years of hands-on experience in
+			Java development. Proficient in building web applications using Java
+			frameworks including Spring and Quarkus, as well as JavaScript with
+			Vue.js, following agile methodologies. Experienced with Git version
+			control systems and comfortable working in terminal and Linux
+			environments.</p>
+	</div>
+</div>
