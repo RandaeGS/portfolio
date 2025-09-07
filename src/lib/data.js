@@ -46,7 +46,7 @@ export const education = [
 		issuedBy: "Boot.dev",
 		date: "December 2024",
 	},
-	
+
 	{
 		title: "Learn Object Oriented Programming in Python Course",
 		issuedBy: "Boot.dev",
@@ -58,4 +58,13 @@ export const education = [
 		issuedBy: "Boot.dev",
 		date: "December 2024",
 	},
+]
+
+export const projects = [
+	{
+		title: "example title",
+		summary: ["this", "that"],
+		technologies: ["Java"],
+		link: "link"
+	}
 ]
