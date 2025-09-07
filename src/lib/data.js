@@ -27,3 +27,35 @@ export const experience = [
 	}
 
 ]
+
+export const education = [
+	{
+		title: "Computer Science Engineering Bachelors Degree",
+		issuedBy: "Pontificia Universidad Catolica Madre y Maestra (PUCMM)",
+		date: "September 2025",
+	},
+
+	{
+		title: "Database Change Management for Java Developers",
+		issuedBy: "JConf Dominicana",
+		date: "July 2025",
+	},
+
+	{
+		title: "Learn Git Course",
+		issuedBy: "Boot.dev",
+		date: "December 2024",
+	},
+	
+	{
+		title: "Learn Object Oriented Programming in Python Course",
+		issuedBy: "Boot.dev",
+		date: "December 2024",
+	},
+
+	{
+		title: "Learn Shells and Terminals Course",
+		issuedBy: "Boot.dev",
+		date: "December 2024",
+	},
+]
