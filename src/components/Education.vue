@@ -16,7 +16,7 @@ const paginatedEducation = computed(() =>
 </script>
 
 <template>
-	<div class="space-y-2 p-3 md:p-0">
+	<div id="education" class="space-y-2 p-3 md:p-0">
 		<h2 class="text-2xl font-semibold">Education</h2>
 
 		<!-- Education cards -->
